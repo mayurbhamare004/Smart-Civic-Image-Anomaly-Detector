@@ -35,7 +35,7 @@ python scripts/train_model.py
 
 #### 2. Run Streamlit App
 ```bash
-streamlit run app/streamlit_app.py
+streamlit run app/civic_detector.py
 ```
 
 #### 3. Run FastAPI Backend (Optional)
