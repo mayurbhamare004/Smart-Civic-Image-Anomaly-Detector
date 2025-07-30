@@ -1,0 +1,82 @@
+# Enhanced YOLOv8 Training Configuration
+model:
+  name: "yolov8s"  # Upgraded to small model for better accuracy
+  pretrained: true
+  progressive: true  # Enable progressive training
+
+# Dataset Configuration
+data:
+  path: "scripts/data/processed/dataset.yaml"
+  train: "scripts/data/processed/train"
+  val: "scripts/data/processed/val"
+  test: "scripts/data/processed/test"
+  
+# Class Configuration
+classes:
+  names:
+    0: "pothole"
+    1: "garbage_dump"
+    2: "waterlogging"
+    3: "broken_streetlight"
+    4: "damaged_sidewalk"
+    5: "construction_debris"
+  nc: 6  # number of classes
+
+# Enhanced Training Parameters
+training:
+  epochs: 75  # Increased for better convergence
+  batch_size: 12  # Optimized batch size
+  img_size: [480, 512, 544, 576, 608, 640, 672, 704]  # Multi-scale training
+  patience: 25  # Increased patience
+  save_period: 10
+  close_mosaic: 10  # Disable mosaic in last 10 epochs
+  
+# Advanced Optimization
+optimizer:
+  type: "AdamW"  # Better optimizer for small datasets
+  lr0: 0.001  # Lower learning rate for stability
+  lrf: 0.01  # Final learning rate factor
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 5
+  warmup_momentum: 0.8
+  warmup_bias_lr: 0.1
+
+# Loss Configuration
+loss:
+  box: 7.5  # Box regression loss weight
+  cls: 0.5  # Classification loss weight
+  dfl: 1.5  # Distribution focal loss weight
+
+# Enhanced Augmentation
+augmentation:
+  # Color space augmentations
+  hsv_h: 0.02      # Hue shift
+  hsv_s: 0.8       # Saturation
+  hsv_v: 0.5       # Value/brightness
+  
+  # Geometric augmentations
+  degrees: 15.0     # Rotation
+  translate: 0.15   # Translation
+  scale: 0.3        # Scaling
+  shear: 8.0        # Shearing
+  perspective: 0.0002 # Perspective transform
+  
+  # Flip augmentations
+  flipud: 0.0       # No vertical flip (roads are oriented)
+  fliplr: 0.5       # Horizontal flip OK
+  
+  # Advanced augmentations
+  mosaic: 1.0       # Mosaic augmentation
+  mixup: 0.15       # Mixup augmentation
+  copy_paste: 0.1   # Copy-paste augmentation
+  
+  # Noise and effects
+  blur: 0.01        # Motion blur
+  median_blur: 0.01 # Median blur
+
+# Hardware Optimization
+hardware:
+  amp: true  # Automatic Mixed Precision
+  device: "auto"  # Auto-detect best device
+  workers: 8  # Data loading workers

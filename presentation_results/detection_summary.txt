@@ -1,0 +1,62 @@
+CIVIC ANOMALY DETECTION - PRESENTATION RESULTS
+==================================================
+
+Total Detections: 17
+
+Pothole: 7
+  1. Confidence: 60.0%
+     Description: Road damage detected - Size: 171px, Darkness: 0.63
+     Location: [554, 375, 584, 387]
+  2. Confidence: 68.8%
+     Description: Road damage detected - Size: 421px, Darkness: 0.64
+     Location: [495, 354, 535, 379]
+  3. Confidence: 60.0%
+     Description: Road damage detected - Size: 404px, Darkness: 0.80
+     Location: [447, 277, 481, 303]
+  4. Confidence: 60.5%
+     Description: Road damage detected - Size: 184px, Darkness: 0.64
+     Location: [563, 162, 581, 180]
+  5. Confidence: 60.0%
+     Description: Road damage detected - Size: 274px, Darkness: 0.72
+     Location: [440, 162, 467, 186]
+  6. Confidence: 14.3%
+     Description: AI-detected pothole (confidence: 0.143)
+     Location: [580.6232299804688, 344.7928466796875, 611.3574829101562, 406.0]
+  7. Confidence: 3.9%
+     Description: AI-detected pothole (confidence: 0.039)
+     Location: [495.325927734375, 340.47503662109375, 535.3460083007812, 378.5850830078125]
+
+Garbage Dump: 8
+  1. Confidence: 85.0%
+     Description: High color variation detected - potential waste area
+     Location: [0, 0, 204, 135]
+  2. Confidence: 85.0%
+     Description: High color variation detected - potential waste area
+     Location: [204, 0, 408, 135]
+  3. Confidence: 85.0%
+     Description: High color variation detected - potential waste area
+     Location: [408, 0, 612, 135]
+  4. Confidence: 85.0%
+     Description: High color variation detected - potential waste area
+     Location: [0, 135, 204, 270]
+  5. Confidence: 85.0%
+     Description: High color variation detected - potential waste area
+     Location: [204, 135, 408, 270]
+  6. Confidence: 85.0%
+     Description: High color variation detected - potential waste area
+     Location: [408, 135, 612, 270]
+  7. Confidence: 85.0%
+     Description: High color variation detected - potential waste area
+     Location: [204, 270, 408, 406]
+  8. Confidence: 85.0%
+     Description: High color variation detected - potential waste area
+     Location: [408, 270, 612, 406]
+
+Waterlogging: 2
+  1. Confidence: 66.8%
+     Description: Blue reflective area - potential water accumulation
+     Location: [0, np.int64(169), 113, np.int64(238)]
+  2. Confidence: 74.3%
+     Description: Blue reflective area - potential water accumulation
+     Location: [np.int64(368), np.int64(239), np.int64(495), np.int64(310)]
+

@@ -1,0 +1,53 @@
+{
+  "session_id": "20250718_165232",
+  "timestamp": "2025-07-18T17:27:17.204854",
+  "training_time_minutes": 34.72184863090515,
+  "configuration": {
+    "data": "/home/error/Civic Image Anomaly detector/scripts/data/processed/dataset.yaml",
+    "imgsz": 640,
+    "epochs": 10,
+    "batch": 8,
+    "patience": 10,
+    "save_period": 5,
+    "optimizer": "AdamW",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 10.0,
+    "translate": 0.1,
+    "scale": 0.2,
+    "shear": 5.0,
+    "perspective": 0.0001,
+    "flipud": 0.0,
+    "fliplr": 0.5,
+    "mosaic": 0.8,
+    "mixup": 0.1,
+    "project": "/home/error/Civic Image Anomaly detector/models/weights",
+    "name": "civic_anomaly_20250718_165232",
+    "exist_ok": true,
+    "verbose": true,
+    "save": true,
+    "save_txt": true,
+    "plots": true,
+    "device": "cpu",
+    "workers": 4,
+    "amp": true
+  },
+  "dataset_info": {
+    "total_images": 160,
+    "total_labels": 160,
+    "total_objects": 234,
+    "classes": 6
+  },
+  "results_summary": {
+    "best_epoch": null,
+    "best_fitness": null
+  }
+}

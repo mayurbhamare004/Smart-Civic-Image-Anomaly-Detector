@@ -1,0 +1,5 @@
+path: /home/error/Civic Image Anomaly detector/focused_pothole_training
+train: images
+val: images  # Using same for validation in this small dataset
+nc: 1
+names: ['pothole']

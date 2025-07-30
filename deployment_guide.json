@@ -1,0 +1,33 @@
+{
+  "deployment_timestamp": "2025-07-28T02:33:06.707892",
+  "model_info": {
+    "path": "models/weights/simple_enhanced_20250727_230502/weights/best.pt",
+    "size_mb": 21.46158790588379
+  },
+  "performance_summary": {
+    "precision": 0.8484848484848485,
+    "recall": 0.9166666666666666,
+    "f1": 0.8771929824561404
+  },
+  "deployment_options": {
+    "streamlit_app": {
+      "command": "streamlit run app/streamlit_app.py",
+      "description": "Web interface for image upload and analysis",
+      "port": 8501
+    },
+    "api_server": {
+      "command": "uvicorn app.api:app --reload",
+      "description": "REST API for programmatic access",
+      "port": 8000
+    },
+    "command_line": {
+      "command": "python3 scripts/enhanced_inference.py --input image.jpg",
+      "description": "Command-line inference tool"
+    }
+  },
+  "integration_examples": {
+    "python_api": "\nfrom scripts.enhanced_inference import EnhancedCivicDetector\n\ndetector = EnhancedCivicDetector()\nresult_image, detections, summary = detector.detect_anomalies_enhanced(\"image.jpg\")\nprint(f\"Found {summary['total_detections']} anomalies\")\n",
+    "batch_processing": "\npython3 scripts/enhanced_inference.py --input image_folder/ --output results/ --batch\n",
+    "confidence_tuning": "\npython3 scripts/enhanced_inference.py --input image.jpg --conf 0.1 --save-json\n"
+  }
+}

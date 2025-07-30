@@ -1,0 +1,63 @@
+{
+  "dataset_info": {
+    "total_images": 160,
+    "total_labels": 160,
+    "total_objects": 234,
+    "classes": 6
+  },
+  "split_distribution": {
+    "train": {
+      "images": 106,
+      "labels": 106,
+      "objects": 152,
+      "class_distribution": {
+        "0": 61,
+        "2": 33,
+        "1": 58
+      }
+    },
+    "val": {
+      "images": 34,
+      "labels": 34,
+      "objects": 55,
+      "class_distribution": {
+        "1": 20,
+        "2": 13,
+        "0": 22
+      }
+    },
+    "test": {
+      "images": 20,
+      "labels": 20,
+      "objects": 27,
+      "class_distribution": {
+        "1": 8,
+        "2": 7,
+        "0": 12
+      }
+    }
+  },
+  "class_names": {
+    "0": "pothole",
+    "1": "garbage_dump",
+    "2": "waterlogging",
+    "3": "broken_streetlight",
+    "4": "damaged_sidewalk",
+    "5": "construction_debris"
+  },
+  "source_distribution": {
+    "synthetic": 200,
+    "real_world": 1283
+  },
+  "validation_summary": {
+    "issues_found": 0,
+    "issues_fixed": true
+  },
+  "training_recommendations": {
+    "epochs": 100,
+    "batch_size": 16,
+    "learning_rate": 0.01,
+    "augmentation": "medium",
+    "note": "Medium dataset - good for initial training"
+  }
+}
