@@ -5,9 +5,9 @@ numpy
 matplotlib
 typing_extensions
 
-# Compatible PyTorch CPU-only builds
-torch==2.2.2+cpu
-torchvision==0.17.2+cpu
-torchaudio==2.2.2+cpu
+# Compatible PyTorch CPU-only version
+torch==2.5.1+cpu
+torchvision==0.16.1+cpu
+torchaudio==2.5.1+cpu
 
 --extra-index-url https://download.pytorch.org/whl/cpu
