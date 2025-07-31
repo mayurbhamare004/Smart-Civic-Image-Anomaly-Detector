@@ -1,6 +1,11 @@
-torch==2.1.0
-torchvision==0.16.0
-opencv-python-headless==4.9.0.80
-streamlit==1.33.0
-numpy
+streamlit
+ultralytics==8.0.198
 Pillow
+numpy
+matplotlib
+torch==2.5.1+cpu
+torchvision==0.16.1+cpu
+torchaudio==2.5.1+cpu
+typing_extensions
+
+--extra-index-url https://download.pytorch.org/whl/cpu
