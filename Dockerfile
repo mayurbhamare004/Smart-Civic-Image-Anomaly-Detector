@@ -20,6 +20,6 @@ COPY . .
 
 # Expose Render port
 EXPOSE 10000
+ENV PORT=10000
 
-# Run Streamlit
 CMD streamlit run app/civic_detector.py --server.port=$PORT --server.address=0.0.0.0
