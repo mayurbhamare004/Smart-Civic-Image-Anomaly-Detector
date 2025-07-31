@@ -6,6 +6,6 @@ matplotlib
 torch==2.5.1+cpu
 torchvision==0.16.1+cpu
 torchaudio==2.5.1+cpu
-typing_extensions
+typing-extensions
 
 --extra-index-url https://download.pytorch.org/whl/cpu
