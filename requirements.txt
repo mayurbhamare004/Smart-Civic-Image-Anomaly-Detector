@@ -3,9 +3,7 @@ ultralytics==8.0.198
 Pillow
 numpy
 matplotlib
-torch==2.5.1+cpu
-torchvision==0.16.1+cpu
-torchaudio==2.5.1+cpu
+torch==2.5.1
+torchvision==0.16.1
+torchaudio==2.5.1
 typing_extensions
-
---extra-index-url https://download.pytorch.org/whl/cpu
