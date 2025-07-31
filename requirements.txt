@@ -1,13 +1,6 @@
-streamlit
-ultralytics==8.0.198
-Pillow
+torch==2.1.0
+torchvision==0.16.0
+opencv-python-headless==4.9.0.80
+streamlit==1.33.0
 numpy
-matplotlib
-typing_extensions
-
-# Compatible PyTorch CPU-only version
-torch==2.5.1+cpu
-torchvision==0.16.1+cpu
-torchaudio==2.5.1+cpu
-
---extra-index-url https://download.pytorch.org/whl/cpu
+Pillow
